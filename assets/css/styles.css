@@ -3,98 +3,115 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    width: 100vw;
-    height: 100vh;
-    font-size: 62.5%;
-    color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
+    /* box-sizing: border-box; */
 }
 
 body {
-    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/assets/img/fundo.jpeg);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
 }
 
-header {
-    width: 100%;
-    height: 7vh;
-    background-color: rgba(20, 20, 20, 0.2);
-}
-
-.menu-content {
-    text-transform: uppercase;
-    height: 100%;
+nav {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    font-size: 1.8rem;
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
-.logo {
-    font-size: 1.8rem;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
-}
-
-.menu-content .lista-itens {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-.menu-content .lista-itens a {
+nav p {
+    margin-left: 30px;
     text-decoration: none;
-    color: #FFFFFF;
-    padding: 1.5rem;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
     transition: 2ms ease-in;
     position: relative;
 }
 
-.menu-content .lista-itens a:before {
+nav ul li a:before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0px;
-    height: 1px;
+    height: 3px;
     background-color: rgb(251, 255, 0);
     transition: all 1.5s ease;
 }
 
-.menu-content .lista-itens a:hover:before {
+nav ul li a:hover:before {
     width: 100%;
 }
 
-main {
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content {
+header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 54px;
 }
 
-.primeiro-texto {
-    width: 850px;
+header, img {
+
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/assets/img/fundo.jpeg);
+    /* background-image: url("../img/fundo.jpeg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position-y: 0px;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    color: #FFFFFF;
+}
+
+header h2 {
+    color: #FFFFFF;
+}
+
+/* .texto-1 {
     font-size: 5rem;
     margin-bottom: 2rem;
     text-align: center;
+} */
+
+
+.texto-1 {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    text-align: center;
 }
 
-.segundo-texto {
-    margin-bottom: 7rem;
+.texto-2 {
+    width: 100%;
+    margin-bottom: 5rem;
+    padding-top: 2.9rem;
     font-size: 2rem;
     color: rgb(165, 165, 165);
     text-transform: uppercase;
@@ -126,7 +143,11 @@ main {
     border: none;
 }
 
-.btn, button::before {
+.close-menu {
+    display: none;
+}
+
+/* .btn, button::before {
     content: '';
     border-radius: 20px;
     bottom: 0;
@@ -141,4 +162,51 @@ main {
 
 .btn, button:hover:before {
     width: 100%;
+} */
+
+@media (max-width: 610px) {
+    .menu {
+        bottom: 0;
+        /* height: 100vh; */
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        color: #FFFFFF;
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+    }
+
+    .menu-spacing {
+        display: none;
+    }
+
+    
 }

@@ -71,8 +71,8 @@ section {
     }
 }
 
-@media screen and (min-width: 790) {}
+/* @media screen and (min-width: 790) {}
 .navbar  {
     align-items: stretch;
     display: flex;
-}
+} */

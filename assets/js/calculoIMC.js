@@ -7,7 +7,7 @@ form.addEventListener('submit', function (event) { // adicionou um evento no for
     
     const peso = Number(inputPeso.value); //converteu os inputs para Numeros
     const altura = Number(inputAltura.value);
-
+    
     if (!peso) { //se informar uma outra coisa que não seja numero, retorna os if
         setResultado('Peso inválido', false);
         return;

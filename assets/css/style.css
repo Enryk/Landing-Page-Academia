@@ -6,6 +6,17 @@ header {
     text-align: center;
 } 
 
+.menu-label {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
 header, img {
     background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/assets/img/fundo.jpeg);
     background-size: cover;
@@ -54,7 +65,7 @@ header, img {
     background-color: #000000;
     display: flex;
     flex-grow: column wrap;
-    justify-content:space-evenly;   
+    justify-content:space-evenly;
 }
 .contato img {
     width: 100%;
@@ -65,14 +76,14 @@ section {
     margin-top: 100px;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 386px) {
     .navbar {
-        background: #000000;
+        display: block;
     }
 }
 
-@media screen and (min-width: 790) {}
+/* @media screen and (min-width: 790) {}
 .navbar  {
     align-items: stretch;
     display: flex;
-}
+} */

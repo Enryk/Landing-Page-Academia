@@ -125,14 +125,15 @@ form button:hover {
 .paragrafo-resultado, .bad {
     background: rgb(109,255,182);
     padding: 10px 20px;
-    width: 30%;
 }
 
 .bad {
     background: rgb(255, 150, 150);
 }
 
-
+.teste {
+    float: right;
+}
 
 @media screen and (max-width: 465px) {
     form button {

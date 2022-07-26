@@ -146,6 +146,10 @@ form button:hover {
     float: right;
 }
 
+p {
+    font-weight: bold;
+}
+
 img {
     height: 266px;
     width: auto;
@@ -169,7 +173,7 @@ img {
 }
 
 .columns {
-    background: #c5bbbb;
+    background: #00000009;
 }
 
 .column .container {

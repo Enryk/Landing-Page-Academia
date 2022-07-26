@@ -83,36 +83,6 @@ section {
     margin-top: 100px;
 }
 
-@media screen and (max-width: 386px) {
-    .navbar {
-        display: block;
-    }
-}
-
-/* @media screen and (min-width: 790) {}
-.navbar  {
-    align-items: stretch;
-    display: flex;
-} */
-
-
-
-
-
-/* * {
-    box-sizing: border-box;
-    outline: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: var(--primary-color);
-    font-family: 'Open sans', sans-serif;
-    font-size: 1.3em;
-    line-height: 1.5em;
-} */
-
 .container {
     max-width: 640px;
     margin: 50px auto;
@@ -123,7 +93,7 @@ body {
 
 form input, form label, form button {
     display: block;
-    width: 100%;
+    width: 30%;
     margin-bottom: 10px;
 }
 
@@ -155,8 +125,39 @@ form button:hover {
 .paragrafo-resultado, .bad {
     background: rgb(109,255,182);
     padding: 10px 20px;
+    width: 30%;
 }
 
 .bad {
     background: rgb(255, 150, 150);
+}
+
+
+
+@media screen and (max-width: 465px) {
+    form button {
+        font-size: 12px;
+        font-weight: 700;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 386px) {
+    .navbar {
+        display: block;
+    }
+    
+    form input {
+        font-size: 18px;
+        padding: 5 15px;
+    }
+
+    form button {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    form button {
+        font-size: 7px;
+    }
 }

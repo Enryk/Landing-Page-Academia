@@ -52,13 +52,17 @@ header, img {
     text-transform: uppercase;
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+a {
+    text-decoration: none;
+    text-decoration-color:#FFFFFF;
+    color: inherit;
 }
 
-.btn, button {
+a:hover {
+    color: rgb(251, 255, 0);
+}
+
+button {
     width: 250px;
     height: 60px;
     cursor: pointer;
@@ -73,9 +77,30 @@ header, img {
     transition: 1.5s;
 }
 
-.btn, button:hover {
+button:hover {
     color: rgb(251, 255, 0);
     border: none;
+}
+
+.linkPag {
+    border-radius: 20px;
+}
+
+#sectionEdit {
+    margin-top: 0px;
+}
+
+#sectionEditFundo {
+    margin-top: 0px;
+    background: #00000009;
+}
+
+#pExercicios {
+    padding-left: 30px;
+}
+
+.menu-list {
+    text-align: center;
 }
 
 .contato {
@@ -84,6 +109,10 @@ header, img {
     display: flex;
     flex-grow: column wrap;
     justify-content:space-evenly;
+}
+
+.level-left {
+    padding-left: 30px;
 }
 .contato img {
     width: 100%;

@@ -82,8 +82,17 @@ header, img {
     border-radius: 20px;
 }
 
-.sectionRedeSocial {
+#sectionEdit {
     margin-top: 0px;
+}
+
+#sectionEditFundo {
+    margin-top: 0px;
+    background-color: rgb(165, 165, 165);
+}
+
+#pExercicios {
+    padding-left: 30px;
 }
 
 .contato {
@@ -92,6 +101,10 @@ header, img {
     display: flex;
     flex-grow: column wrap;
     justify-content:space-evenly;
+}
+
+.level-left {
+    padding-left: 30px;
 }
 .contato img {
     width: 100%;

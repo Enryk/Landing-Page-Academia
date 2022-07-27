@@ -133,20 +133,15 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-.paragrafo-resultado, .bad {
-    background: rgb(109,255,182);
+.paragrafo-resultado {
+    background: rgb(251, 255, 0);
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 .bad {
     background: rgb(255, 150, 150);
-}
-
-.teste {
-    float: right;
-}
-
-p {
+    padding: 10px 20px;
     font-weight: bold;
 }
 
@@ -180,13 +175,6 @@ img {
     margin-bottom: 0px;
 }
 
-/* @media screen and (max-width: 465px) {
-    form button {
-        font-size: 12px;
-        font-weight: 700;
-        height: 50px;
-    }
-} */
 @media screen and (max-width: 386px) {
     .navbar {
         display: block;
@@ -196,19 +184,4 @@ img {
         height: 200px;
         width: auto;
     }
-    
-    /* form input {
-        font-size: 18px;
-        padding: 5 15px;
-    }
-
-    form button {
-        font-size: 9px;
-    } */
 }
-
-/* @media screen and (max-width: 352px) {
-    form button {
-        font-size: 7px;
-    }
-} */

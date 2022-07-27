@@ -78,6 +78,14 @@ header, img {
     border: none;
 }
 
+.linkPag {
+    border-radius: 20px;
+}
+
+.sectionRedeSocial {
+    margin-top: 0px;
+}
+
 .contato {
     padding-top: 30px;
     background-color: #000000;
@@ -133,54 +141,16 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-/* .paragrafo-resultado {
-    background: rgb(109,255,182);
-    padding: 10px 20px;
-} */
-
-.paragrafo-resultadoAbaixo {
+.paragrafo-resultado {
     background: rgb(251, 255, 0);
     padding: 10px 20px;
-}
-
-.paragrafo-resultadoNormal {
-    background: rgb(29, 138, 2);
-    padding: 10px 20px;
-}
-
-.paragrafo-resultadoSobrepeso {
-    background: rgba(255, 0, 0, 0.63);
-    padding: 10px 20px;
-}
-
-.paragrafo-resultadoOb1 {
-    background: rgba(255, 0, 0, 0.747);
-    padding: 10px 20px;
-}
-
-.paragrafo-resultadoOb2 {
-    background: rgba(255, 0, 0, 0.76);
-    padding: 10px 20px;
-}
-
-.paragrafo-resultadoOb3 {
-    background: rgb(255, 0, 0);
-    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .bad {
     background: rgb(255, 150, 150);
     padding: 10px 20px;
-}
-
-.teste {
-    float: right;
-}
-
-p {
     font-weight: bold;
-    background: rgb(251, 255, 0);
-    padding: 10px 20px;
 }
 
 img {

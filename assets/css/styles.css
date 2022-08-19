@@ -11,6 +11,11 @@ header {
     align-items: center;
     color:#FFFFFF;
     text-align: center;
+    /* height: 310px; */
+}
+
+.intro {
+    height: 310px;
 }
 
 .marginTopSection {

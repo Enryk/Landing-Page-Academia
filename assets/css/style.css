@@ -11,6 +11,11 @@ header {
     align-items: center;
     color:#FFFFFF;
     text-align: center;
+    /* height: 310px; */
+}
+
+.intro {
+    height: 310px;
 }
 
 .marginTopSection {
@@ -120,7 +125,7 @@ button:hover {
 }
 
 section {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .container {
@@ -213,4 +218,8 @@ img {
         height: 200px;
         width: auto;
     }
+}
+
+main {
+    background: #00ff00;
 }
